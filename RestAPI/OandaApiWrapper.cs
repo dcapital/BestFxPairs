@@ -15,13 +15,13 @@ namespace RestApi
     /// This class also does *not* provide complete access to the API, it only providems a subset of the functionality
     /// Documentation: https://github.com/oanda/apidocs
     /// </summary>
-    public class Rest
+    public class OandaApiWrapper
     {
         /// <summary>
         /// Server to communicate with
         /// </summary>
         /// Change to https://api-fxpractice.oanda.com/ for practice account
-        static string sApiServer = "http://api-sandbox.oanda.com/";
+        static readonly string sApiServer = "http://api-sandbox.oanda.com/";
         
         /// <summary>
         /// Gets the list of accounts for a specific user
